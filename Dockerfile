@@ -16,9 +16,9 @@ RUN \
   wget http://kanboard.net/kanboard-latest.zip && \
   unzip kanboard-latest.zip && \
   chown -R www-data:www-data kanboard/data && \
-  rm kanboard-latest.zip && \
+  rm kanboard-latest.zip
 
 EXPOSE 80
 
-ENTRYPOINT /etc/init.d/apache2 start
+ENTRYPOINT /etc/init.d/apache2 start && /bin/bash
 
