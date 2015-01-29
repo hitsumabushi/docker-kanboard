@@ -1,0 +1,2 @@
+docker build -t kanboard-build .
+docker run -ti -p 8080:80 kanboard-build
