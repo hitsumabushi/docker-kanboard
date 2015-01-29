@@ -18,3 +18,6 @@ RUN \
   chown -R www-data:www-data kanboard/data && \
   rm kanboard-latest.zip
 
+EXPOSE 80
+
+ENTRYPOINT ["/usr/bin/supervisord",  "-n"]
